@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ImageView
+        android:id="@+id/imageViewCharacterDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textNameDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rumpelstiltskin"
+        android:text="Name"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewCharacterDetail" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/rumpelstiltskin"
+        android:text="Species:"
+        android:textSize="20dp"
+        android:textColor="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNameDetail" />
+
+    <TextView
+        android:id="@+id/textSpeciesDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Human"
+        android:textSize="20dp"
+        android:fontFamily="@font/rumpelstiltskin"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/rumpelstiltskin"
+        android:text="Gender:"
+        android:textSize="20dp"
+        android:textColor="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSpeciesDetail" />
+
+    <TextView
+        android:id="@+id/textGenderDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Male"
+        android:textSize="20dp"
+        android:fontFamily="@font/rumpelstiltskin"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/rumpelstiltskin"
+        android:text="Status:"
+        android:textSize="20dp"
+        android:textColor="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textGenderDetail" />
+
+    <TextView
+        android:id="@+id/textStatusDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dead"
+        android:textSize="20dp"
+        android:fontFamily="@font/rumpelstiltskin"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/rumpelstiltskin"
+        android:text="Last place:"
+        android:textSize="20dp"
+        android:textColor="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textStatusDetail" />
+
+    <TextView
+        android:id="@+id/textViewLastPlace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Magazine"
+        android:textSize="20dp"
+        android:fontFamily="@font/rumpelstiltskin"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/rumpelstiltskin"
+        android:text="Count of episodes:"
+        android:textSize="20dp"
+        android:textColor="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLastPlace" />
+
+    <TextView
+        android:id="@+id/textCountEpisodes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:textSize="20dp"
+        android:fontFamily="@font/rumpelstiltskin"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+</androidx.constraintlayout.widget.ConstraintLayout>
